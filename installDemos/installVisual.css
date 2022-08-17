@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition-duration: 1.5s;
+    font-weight: bold;
+}
+
+html {
+    overflow: hidden;
+    background-color: antiquewhite;
+    overflow: hidden;
+    font-family: 'Grape Nuts', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video__container__header {
+    font-size: 90px;
+    text-align: center;
+    margin: 20px;
+    font-weight:bolder;
+}
+
+.video__container {
+    
+}

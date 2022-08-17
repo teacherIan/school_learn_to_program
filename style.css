@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition-duration: 1.5s;
+  font-weight:bold;
+}
+
+html {
+  overflow: hidden;
+  background-color:antiquewhite;
+  overflow: hidden;
+  font-family: 'Grape Nuts', cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 70px;
+}
+
+
+
+.basic__card {
+  cursor:pointer;
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 10px 10px #888888;
+  border-radius:50px;
+  opacity: .8;
+  font-weight: bold;
+  font-size: 60px;
+  color:#fff;
+  
+
+}
+
+.card {
+  /* need image */
+
+  height: 95vh;
+  padding:50px;
+  
+}
+
+.card__grid {
+  position: relative;
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8,1fr);
+  gap:50px;
+  
+}
+
+.base__card__style {
+  border-radius: 50px;
+}
+
+.card__header {
+  font-weight: bold;
+  font-size: 60px;
+  color:#ffffff;
+}
+
+.secondary__header {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color:rgb(255, 255, 255);
+
+}
+
+.card__one {
+
+  background-color: black;
+  border-radius:50px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 6;
+
+
+}
+
+.card__two {
+  background-color:red;
+  grid-column: 5 / 9;
+  grid-row: 4 / 9;
+  
+}
+
+.card__three {
+  z-index:1;
+  width: 250px;
+  height:250px;
+  left: 50px;
+  top:0;
+  background-image: url('./static/SSIS__logo.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  grid-row: 4 / 6;
+  grid-column: 4 / 5;
+  border-radius:50px;
+  box-shadow: 0px 0px 30px 5px #888888;
+  transition-duration: 2s;
+}
+
+.card__four {
+  background-color:rgb(87, 145, 71);
+  grid-column:1 / 5;
+  grid-row: 6 / 9; 
+
+}
+
+#card__four canvas{
+  border-radius: 50px;
+  position: absolute;
+  z-index:-1;
+
+}
+
+#card__two canvas{
+  border-radius: 50px;
+  position: absolute;
+  z-index:-1;
+  
+
+}
+
+#card__one canvas{
+  border-radius: 50px;
+  position: absolute;
+  z-index:-1;
+  
+
+}
+
+.card__five {
+  background-color:#312783;
+  grid-column: 4 / 9;
+  grid-row: 1 / 4;
+}
+
+.basic__card:hover{
+  /* animation: grow 1s linear infinite alternate; */
+  transform: scale(1.05)
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.005)
+  }
+}

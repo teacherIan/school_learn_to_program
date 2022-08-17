@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition-duration: 1.5s;
+    font-weight: bold;
+}
+
+html {
+    overflow: hidden;
+    background-color: antiquewhite;
+    overflow: hidden;
+    font-family: 'Grape Nuts', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    font-size: 70px;
+    margin: 20px;
+}
+
+.inner__text {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.install__video__list {
+    width: 100%;
+    height: 15vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 100px;
+}
+
+.header__lesson {
+    text-align: center;
+    font-size: 50px;
+}
+
+.information__container__header {
+    padding: 20px;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    flex: 1;
+
+}
+
+.information__container {
+    width: 90vw;
+    height: 15vh;
+    margin: 20px;
+    background-color: antiquewhite;
+    box-shadow: 5px 10px 10px #888888;
+
+}
+
+
+
+.lesson:hover {
+    transform: scale(1.1)
+}
+
+.empty {
+    font-size: 40px;
+
+}
+
+
+.information__container {
+    display: flex;
+    height: 60vh;
+}
+
+.information__container__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 100px;
+    flex: .8;
+}
+
+/* CSS */
+.button {
+
+    opacity: .5;
+    background-color: #cf245f;
+    background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+    border: 0;
+    box-shadow: 5px 5px 15px 2px rgba(25, 24, 24, 0.488);
+    border-radius: 1.25rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    box-shadow: none;
+    transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+    .button {
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+}
+
+
+.lesson {
+    border: 10px rgb(144, 1, 1) solid;
+    box-shadow: 5px 10px 10px #888888;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 25vw;
+}
+
+.lesson.active {
+    border: 10px rgb(0, 113, 8) solid !important;
+    box-shadow: 5px 10px 10px #888888;
+
+}
+
+
+.information__text {
+    flex: 1;
+    margin: 40px;
+}
+
+.information__container__left {
+    flex: 1;
+}
+
+.list {
+    padding: 10px;
+}
+
+.list>* {
+    font-size: 50px;
+    line-height: 50px;
+    padding: 20px;
+}
